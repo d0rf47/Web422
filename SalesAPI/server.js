@@ -1,7 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const bodyParser = require("body-parser");
-const dataService = require('../SalesAPI2/modules/data-service');
+const dataService = require('../SalesAPI/modules/data-service');
 require("dotenv").config({path:'config/config.env'});
 const myData = dataService(`mongodb+srv://admin:${process.env.pass}@cluster0-odvzz.mongodb.net/sample_supplies?retryWrites=true&w=majority`);
 
